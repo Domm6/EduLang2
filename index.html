@@ -20,13 +20,6 @@
     />
   </head>
   <body>
-    <!--[if lt IE 10]>
-      <p class="browsehappy">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="http://browsehappy.com/">upgrade your browser</a> to improve
-        your experience.
-      </p>
-    <![endif]-->
     <div class="container">
       <h1>EduLang</h1>
       <p class="lead slogan">
@@ -47,6 +40,26 @@
         >
       </div>
       <hr />
+      <div class="features">
+        <h3>Key Features</h3>
+        <ul>
+          <li>Support for multiple answers per question</li>
+          <li>Ability to declare variables for later use</li>
+          <li>Set a timer for all quizzes (questions)</li>
+          <li>
+            Keeps track of your session score (correct answers / total attempts)
+          </li>
+          <li>Set an incorrect limit (number of tries per question)</li>
+          <li>Declare hints for each quiz and request them when needed</li>
+          <li>
+            Organize quizzes and definitions by categories (e.g., Math, Science,
+            English)
+          </li>
+          <li>Maintain a running list of definitions for study purposes</li>
+          <li>Include comments in your programs for better organization</li>
+        </ul>
+      </div>
+      <hr />
       <div class="example">
         <h3>Try it yourself</h3>
         <div class="left"><strong>test.edulang</strong></div>
@@ -61,7 +74,7 @@ Math {
 }
         </pre>
         <pre>
-python edulang.py test.EduLang
+python edulang.py
         </pre>
         <h4>Start Coding!</h4>
         <hr />
@@ -82,9 +95,11 @@ python edulang.py test.EduLang
                 <h4>
                   <li>
                     Make sure the file name in this line near the bottom of the
-                    edulang.py file mathces with the program file name you want
-                    to run: edu_program =
-                    edu_mm.model_from_file('test_program.edulang')
+                    edulang.py file matches with the program file name you want
+                    to run:
+                    <pre>
+edu_program = edu_mm.model_from_file('test_program.edulang')</pre
+                    >
                   </li>
                 </h4>
                 <h4><li>Run the program</li></h4>
